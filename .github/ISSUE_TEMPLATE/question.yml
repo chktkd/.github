@@ -1,0 +1,76 @@
+---
+name: 質問
+description: 使い方や設計について質問する
+title: "[Question]: "
+labels: ["question"]
+assignees: []
+
+body:
+  - type: "markdown"
+    attributes:
+      value: |
+        質問ありがとうございます。回答に必要な前提情報を入力してください。
+
+  - type: "textarea"
+    id: "goal"
+    attributes:
+      label: やりたいこと
+      description: 最終的に達成したいことを記載してください
+      placeholder: "例: ローカルで開発環境を起動して初期データを投入したい"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "question"
+    attributes:
+      label: 質問内容
+      description: 具体的に分からない点を記載してください
+      placeholder: "例: `make setup` 実行後にどの順で初期化すればよいですか？"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "tried"
+    attributes:
+      label: 試したこと
+      description: 試した手順、確認したドキュメント、見たコードなどを記載してください
+      placeholder: |
+        - README のセットアップ手順を確認
+        - `make setup` を実行
+        - `docs/setup.md` を確認
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "environment"
+    attributes:
+      label: 実行環境
+      description: 関連する場合に記載してください
+      value: |
+        - OS:
+        - Runtime / Language:
+        - Browser / Client:
+        - Other:
+
+  - type: "textarea"
+    id: "sample"
+    attributes:
+      label: ログ・コードサンプル
+      description: 再現に必要なログや最小コードがあれば貼ってください
+      render: "shell"
+
+  - type: "textarea"
+    id: "additional"
+    attributes:
+      label: 補足
+      description: 追加情報があれば記載してください
+
+  - type: "checkboxes"
+    id: "checklist"
+    attributes:
+      label: チェックリスト
+      options:
+        - label: 関連しそうな Issue やドキュメントを確認しました
+          required: true
+        - label: 実現したいことと試したことを記載しました
+          required: true
