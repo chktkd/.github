@@ -1,0 +1,35 @@
+---
+name: Issue
+description: 不具合・改善・作業をまとめて記録する
+body:
+  - type: "textarea"
+    id: "background"
+    attributes:
+      label: 背景
+      description: 解決したい問題、起きている事象、きっかけを記載してください
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "proposal"
+    attributes:
+      label: やること
+      description: 対応案や作業内容を記載してください。未定なら「調査から」と書いてください
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "done"
+    attributes:
+      label: 完了条件
+      description: 何ができたら閉じるかを記載してください
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "notes"
+    attributes:
+      label: 補足
+      description: 参考リンク、ログ、代替案などがあれば記載してください
