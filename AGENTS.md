@@ -6,13 +6,6 @@
 
 - Respond in Japanese
 
-## 共通の技術判断
-
-- 技術判断や実装の前に `../engineering-handbook/AGENTS.md` を読み、その「Handbook の参照」に従って該当文書を読む。
-- 作業開始時に handbook の現在の commit を確認し、参照した commit を検証結果に記録する。
-- handbook が見つからない、または読めない場合は、その旨を報告する。参照済みとは扱わない。
-- このリポジトリの指示を優先し、handbook との差異があれば報告する。
-
 ## Commands
 
 - 開発・テスト・lint: N/A（コードも lint 設定もなく、テンプレートと文書のみ）
